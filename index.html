@@ -13,68 +13,53 @@
   </head>
   <body>
     <div class="fluid-container d-flex justify-content-center align-items-center">
-      <div class="row col-md-8 col-sm-12 d-flex justify-content-center align-items-center m-0">
-        <div class="formulario">
+      <div class="row col-md-10 col-sm-12 col-lg-6 d-flex justify-content-center align-items-center flex-column flex-nowrap m-0">
+        <div class="formulario col-md-8 col-lg-10 col-sm-12">  
 
-          <form>
-
-          <div class="top">
-
-              <div class="form-group mx-2">
+              <div class="form-group mx-2 col-md-12">
                 <label for="cep">cep</label>
-                <input type="text" class="form-control" id="cep"/>
+                <input type="text" class="form-control" required id="cep"/>
+                <button id="semCpf" class="semCep" data-toggle="tooltip" data-placement="top" title="Informe seu estado, cidade e rua depois clique em consulta para encontrar seu cep.">não sei meu cep</button>
               </div>
 
 
-              <div class="form-group mx-2">
-                <label for="uf">estado</label>
+              <div class="form-group col-12 mx-2">
+                <label for="uf" required >estado</label>
                 <input type="text" class="form-control" id="uf" />
               </div>
 
-            <div class="form-group mx-2">
-              <label for="cidade">cidade</label>
+            <div class="form-group mx-2 col-12">
+              <label for="cidade" required >cidade</label>
               <input type="text" class="form-control" id="cidade" />
             </div>
 
-          </div>
+            <div class="form-group mx-2 col-12">
+              <label for="rua" required >rua</label>
+              <input type="text" class="form-control" id="rua" />
+            </div>
 
-
-
-          <div class="bottom">
-
-            <div class="form-group mx-2">
+            <div class="form-group mx-2 col-12">
               <label for="bairro">bairro</label>
               <input type="text" class="form-control" id="bairro" />
             </div>
 
-            <div class="form-group mx-2">
-              <label for="rua">rua</label>
-              <input type="text" class="form-control" id="rua" />
-            </div>
-
-            <div class="form-group mx-2">
+            <div class="form-group mx-2 col-12">
               <label for="ibge">ibge</label>
               <input type="text" class="form-control" id="ibge" />
             </div>
+
           </div>
-          </form>
+          
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary px-4 text-capitalize" id="btn-busca">ver</button>
+          <button type="button" class="btn btn-outline-primary px-4 text-capitalize" id="btn-consulta">consultar</button>
         </div>
       </div>
     </div>
 
-<script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" ></script>
   </body>
 </html>
